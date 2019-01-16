@@ -1,6 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 img {
@@ -8,43 +12,79 @@ img {
     height: auto;
 }
 
+/* Style the header */
 .header {
-    padding: 80px;
-    text-align: center;
-    background: #333;
-    background-image: url("images/coffee.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    color: black;
+  padding: 80px;
+  text-align: center;
+  background: #333;
+  background-image: url("images/coffee.jpg");
+  color: black;
 }
 
+/* Increase the font size of the h1 element */
 .header h1 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
+/* Style the top navigation bar */
 .navbar {
-    overflow: hidden;
-    background-color: #333;
+  overflow: hidden;
+  background-color: #333;
 }
 
+/* Style the navigation bar links */
 .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
 }
 
+/* Right-aligned link */
 .navbar a.right {
-    float: right;
+  float: right;
 }
 
+/* Change color on hover */
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.LL_Col {
+    float:left;
+    width: 20.33%;
+    padding: 5px;
+}
+
+.LL_Row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
 .about_me {
     height: auto;
@@ -53,13 +93,6 @@ img {
     margin-right: 20px;
     padding-bottom: 10px;
     overflow: none;
-}
-
-@media screen and (max-width: 400px) {
-    .navbar a {
-        float: none;
-        width: 100%;
-    }
 }
 
 .projects {
@@ -80,14 +113,24 @@ img {
     font-size: 4px;
 }
 
-.LL_Col {
-    float:left;
-    width: 20.33%;
-    padding: 5px;
-}
 
-.LL_Row:after {
-    content: "";
-    clear: both;
-    display: table;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
